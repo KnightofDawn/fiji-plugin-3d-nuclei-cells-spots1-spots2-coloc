@@ -21,7 +21,7 @@ public abstract class Utils
         return impChannelFrame;
     }
 
-    public static ImageHandler getBinnedImageHandler( ImagePlus imp, int nucleiChannel, int binX, int binY, int binZ, int frame )
+    public static ImageHandler getBinnedByteImageHandler( ImagePlus imp, int nucleiChannel, int binX, int binY, int binZ, int frame )
     {
         ImagePlus nucleiImp = getImagePlus( imp, nucleiChannel, frame );
         ImagePlus binnedNucleiImp = new Binner().shrink( nucleiImp, binX, binY,binZ, Binner.MEDIAN );

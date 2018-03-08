@@ -12,21 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="SegmentNucleiCellsSpots.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="909">
-              <caret line="154" column="50" lean-forward="true" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NucleusSegmenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-430">
-              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="1428">
+              <caret line="124" column="41" lean-forward="false" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,43 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellSegmenterSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenterSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NucleusSegmenterSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenterSettings.java">
+      <file leaf-file-name="OutputImageCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputImageCreator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeicaLifReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SegmentNucleiCells.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCells.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +39,8 @@
       <file leaf-file-name="CellSegmenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="-185">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +51,7 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
+            <state relative-caret-position="382">
               <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/ImageHandler.class">
+      <file leaf-file-name="LeicaLifReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="1758" column="33" lean-forward="false" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
+            <state relative-caret-position="375">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,11 +73,55 @@
       <file leaf-file-name="OpenImageFromLif.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/OpenImageFromLif.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="180">
               <caret line="14" column="5" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpotSegmenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpotSegmenterOutput.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterOutput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpotSegmenterSettings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NucleusSegmenterSettings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenterSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,14 +147,25 @@
         <option value="$PROJECT_DIR$/src/test/java/OpenImageFromLif.java" />
         <option value="$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/NucleiSegmenterSettings.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SegmentNuclei.java" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/NucleiSegmenter.java" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenter.java" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/CellSegmenter.java" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/CellSegmenterSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Filters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filters/Filters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfGaussian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMediansSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMedians.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterOutput.java" />
         <option value="$PROJECT_DIR$/src/test/java/SegmentNucleiCells.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/output/OutputImageCreator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java" />
       </list>
     </option>
   </component>
@@ -182,11 +195,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="23" />
-    <option name="y" value="199" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1548" />
+    <option name="y" value="43" />
+    <option name="width" value="1689" />
+    <option name="height" value="942" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -235,6 +248,14 @@
               <item name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" type="b2602c69:ProjectViewProjectNode" />
               <item name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SegmentNuclei">
+  <component name="RunManager" selected="Application.SegmentNucleiCellsSpots">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -295,8 +316,8 @@
       <module name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" />
       <envs />
     </configuration>
-    <configuration name="SegmentNuclei" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="SegmentNucleiCells" />
+    <configuration name="SegmentNucleiCellsSpots" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="SegmentNucleiCellsSpots" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -345,7 +366,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.OpenImageFromLif" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SegmentNuclei" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SegmentNucleiCellsSpots" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -371,22 +392,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="1548" y="43" width="1689" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3043478" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.018597998" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06982392" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06729634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23390558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1730419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25106382" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -408,7 +429,7 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -434,7 +455,7 @@
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -443,9 +464,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -454,7 +473,7 @@
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,7 +754,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCells.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -1038,26 +1057,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LocalSSH.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/OpenImageFromLif.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/Segment3DImage.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-219">
@@ -1074,38 +1073,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="154" column="50" lean-forward="true" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenterSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-430">
           <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1122,13 +1095,289 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="1758" column="33" lean-forward="false" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
+          <folding>
+            <marker date="1520429489098" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1520429489098" expanded="false" signature="138:975" ph="..." />
+            <marker date="1520429489098" expanded="true" signature="1486:1769" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="1816:2145" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="2221:2421" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="2536:2832" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="2885:3149" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="3205:3477" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="3545:3996" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="4081:4444" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="4509:5084" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="5181:6314" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="6405:7844" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="7925:8940" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="9007:10078" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="10140:10476" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="10535:10796" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="10853:11259" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="11339:11350" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="11366:11372" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="11438:11449" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="11467:11473" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="11514:11630" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="11636:11654" ph="/**...*/" />
+            <marker date="1520429489098" expanded="false" signature="11724:11735" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="11769:11775" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="11831:12024" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="12030:12048" ph="/**...*/" />
+            <marker date="1520429489098" expanded="false" signature="12115:12126" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="12160:12166" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="12219:12430" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="12481:12585" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="12645:12782" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="12823:12972" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="13027:13107" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="13447:15007" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="15077:17293" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="17358:17905" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="17970:18447" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="18531:19013" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="19099:19613" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="19680:20615" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="20718:21599" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="21695:21772" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="21874:23288" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="23412:24176" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="24256:25936" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="26037:27758" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="27865:29627" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="29712:29794" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="29895:31334" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="31432:31518" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="31632:32879" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="32998:34517" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="34556:34567" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="34599:34605" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="34930:34999" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="35056:35067" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="35108:35114" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="35280:35298" ph="/**...*/" />
+            <marker date="1520429489098" expanded="false" signature="35354:35365" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="35424:35430" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="35436:35454" ph="/**...*/" />
+            <marker date="1520429489098" expanded="true" signature="35519:35611" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="35682:36022" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="36069:36343" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="36391:36512" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="36564:36652" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="36685:36876" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="36906:37093" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="37125:37315" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="37364:37949" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="38014:38527" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="38602:38965" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="39036:39385" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="39458:39709" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="39756:40004" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="40075:40326" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="40371:40493" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="40540:40662" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="40700:40820" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="40857:40868" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="40902:40908" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="41105:41116" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="41152:41158" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="41296:41307" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="41355:41361" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="41395:41492" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="41567:41993" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="42105:42116" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="42157:42163" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="42217:42228" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="42269:42275" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="42303:42314" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="42354:42360" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="42388:42399" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="42439:42445" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="42487:42498" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="42540:42546" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="42575:42586" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="42643:42649" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="42716:43069" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="43136:43489" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="43556:43909" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="43975:44290" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="44356:44671" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="44737:45052" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="45155:46877" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="46923:47135" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="47182:48118" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="48171:48297" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="48344:48521" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="48554:48565" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="48606:48612" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="48694:48754" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="48856:49296" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="49507:50308" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="50333:50447" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="50484:50632" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="50678:51005" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="51040:51277" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="51303:51637" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="51703:52001" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="52058:52177" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="52202:52281" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="52366:52542" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="52614:53142" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="53196:53207" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="53262:53268" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="53338:53836" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="53934:55285" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="55356:55777" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="55832:55951" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="56251:56262" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="56304:56310" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="56368:56379" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="56420:56426" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="57057:57849" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="57907:58105" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="58536:58547" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="58588:58594" ph=" }" />
+            <marker date="1520429489098" expanded="false" signature="58669:58680" ph=" { " />
+            <marker date="1520429489098" expanded="false" signature="58708:58714" ph=" }" />
+            <marker date="1520429489098" expanded="true" signature="58774:59000" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="59006:59024" ph="/**...*/" />
+            <marker date="1520429489098" expanded="true" signature="59098:59550" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="59608:60060" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="60292:60368" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="60401:60603" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="60635:60836" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="60878:61381" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="61422:61880" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="61929:62182" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="62231:62479" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="62570:62646" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="62750:64531" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="64606:64691" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="64733:64905" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="64966:65461" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMediansSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/processing/FastFilters3D.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="268" column="31" lean-forward="false" selection-start-line="268" selection-start-column="31" selection-end-line="268" selection-end-column="31" />
+          <folding>
+            <marker date="1520429489098" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1520429489098" expanded="false" signature="149:649" ph="..." />
+            <marker date="1520429489098" expanded="true" signature="1151:1158" ph="{}" />
+            <marker date="1520429489098" expanded="true" signature="1305:1425" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="1574:1920" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="2068:3491" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="2826:2876" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="3118:3137" ph="}" />
+            <marker date="1520429489098" expanded="true" signature="3643:5068" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="4403:4453" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="4695:4714" ph="}" />
+            <marker date="1520429489098" expanded="true" signature="5206:5311" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="5466:10019" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="6749:6807" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="7075:7102" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="7869:7923" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="8177:8200" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="8652:8710" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="8981:9008" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="9514:9572" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="9843:9870" ph="}" />
+            <marker date="1520429489098" expanded="true" signature="10163:10480" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="10623:10981" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="11125:15636" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="12428:12486" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="12754:12781" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="13515:13569" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="13823:13846" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="14268:14326" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="14597:14624" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="15131:15189" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="15460:15487" ph="}" />
+            <marker date="1520429489098" expanded="true" signature="15785:15921" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="16005:17205" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="17268:17957" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="18008:18263" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="18324:18619" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="18752:19096" ph="{...}" />
+            <marker date="1520429489098" expanded="true" signature="19224:22679" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="20602:20656" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="20897:20920" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="21338:21396" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="21654:21681" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="22187:22245" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="22503:22530" ph="}" />
+            <marker date="1520429489098" expanded="true" signature="22813:26281" ph="{...}" />
+            <marker date="1520429489098" expanded="false" signature="24199:24253" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="24494:24517" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="24939:24997" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="25255:25282" ph="}" />
+            <marker date="1520429489098" expanded="false" signature="25789:25847" ph="run() → {" />
+            <marker date="1520429489098" expanded="false" signature="26105:26132" ph="}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMedians.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="947">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/Segment3DSpots.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenterSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="382">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1136,10 +1385,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCells.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="375">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/OpenImageFromLif.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/output.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputImageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="124" column="41" lean-forward="false" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
