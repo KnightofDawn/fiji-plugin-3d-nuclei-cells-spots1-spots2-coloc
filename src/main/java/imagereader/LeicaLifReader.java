@@ -29,7 +29,7 @@ public abstract class LeicaLifReader
             int numSeries = process.getSeriesCount();
 
             ImagePlusReader impReader = new ImagePlusReader( process );
-            
+
             ImagePlus[] imps = impReader.openImagePlus();
             return imps[0];
 
