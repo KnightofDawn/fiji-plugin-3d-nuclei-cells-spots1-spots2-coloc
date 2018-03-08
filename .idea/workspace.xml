@@ -12,11 +12,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SegmentNucleiCellsSpots.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java">
+      <file leaf-file-name="RunColocalisationCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RunColocalisationCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="124" column="41" lean-forward="false" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+            <state relative-caret-position="165">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunColocalisationAnalysisCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="270" column="42" lean-forward="true" selection-start-line="270" selection-start-column="42" selection-end-line="270" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,47 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutputImageCreator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputImageCreator.java">
+      <file leaf-file-name="ImageHandler.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/ImageHandler.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CellSegmenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-185">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeicaLifReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="128">
+              <caret line="1760" column="33" lean-forward="false" selection-start-line="1760" selection-start-column="33" selection-end-line="1760" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -80,47 +54,68 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CellSegmenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/CellSegmenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Watershed3D.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/regionGrowing/Watershed3D.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+              <folding>
+                <element signature="e#2065#2066#0" expanded="true" />
+                <element signature="e#2114#2115#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutputImageCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/output/OutputImageCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tables.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/table/Tables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SpotSegmenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenter.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpotSegmenterOutput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterOutput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpotSegmenterSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NucleusSegmenterSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenterSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="45" />
+            <state relative-caret-position="146">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -157,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/main/java/filters/Filters.java" />
         <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfGaussian.java" />
         <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMediansSettings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMedians.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterOutput.java" />
         <option value="$PROJECT_DIR$/src/test/java/SegmentNucleiCells.java" />
@@ -165,7 +159,17 @@
         <option value="$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenter.java" />
         <option value="$PROJECT_DIR$/src/main/java/output/OutputImageCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMedians.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/filters/DifferenceOfMeansOrMedians.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/filters/DifferenceOfMeansOrMedians.java" />
         <option value="$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/imagereader/LeicaLifReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/table/Tables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/CellSegmenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/output/OutputImageCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java" />
       </list>
     </option>
   </component>
@@ -196,10 +200,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1548" />
-    <option name="y" value="43" />
-    <option name="width" value="1689" />
-    <option name="height" value="942" />
+    <option name="x" value="1574" />
+    <option name="y" value="35" />
+    <option name="width" value="1621" />
+    <option name="height" value="1113" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -216,9 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +252,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="coloc3d" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" type="b2602c69:ProjectViewProjectNode" />
@@ -269,6 +271,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,6 +285,10 @@
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="Utils" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.embl.cba.coloc3d" />
+      <recent name="de.embl.cba" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SegmentNucleiCellsSpots">
+  <component name="RunManager" selected="Application.RunColocalisationCommand">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -316,8 +324,8 @@
       <module name="fiji-plugin-3d-nuclei-cells-spots1-spots2-coloc" />
       <envs />
     </configuration>
-    <configuration name="SegmentNucleiCellsSpots" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="SegmentNucleiCellsSpots" />
+    <configuration name="RunColocalisationCommand" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="RunColocalisationCommand" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -366,7 +374,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.OpenImageFromLif" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SegmentNucleiCellsSpots" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RunColocalisationCommand" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -392,29 +400,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1548" y="43" width="1689" height="942" extended-state="0" />
+    <frame x="1574" y="35" width="1621" height="1113" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3043478" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06982392" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06729634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.047498416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24361493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1730419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22609246" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25106382" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57563853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21723731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -424,21 +432,133 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java</url>
+          <line>146</line>
           <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java</url>
+          <line>242</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java</url>
+          <line>237</line>
+          <properties />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RunColocalisationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/filters/DifferenceOfMeansOrMedians.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/output/OutputImageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenterOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenterSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" column="72" lean-forward="false" selection-start-line="127" selection-start-column="72" selection-end-line="127" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/remove-maven-repo.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -450,7 +570,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/NucleusSegmenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -460,7 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/imagereader/LeicaLifReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -472,9 +592,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -754,13 +872,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RunColocalisationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,11 +1183,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/NucleusSegmenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-430">
           <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="48" />
@@ -1083,7 +1196,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenterSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/CellSegmenterSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
@@ -1091,175 +1204,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/ImageHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="1758" column="33" lean-forward="false" selection-start-line="1758" selection-start-column="33" selection-end-line="1758" selection-end-column="33" />
-          <folding>
-            <marker date="1520429489098" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1520429489098" expanded="false" signature="138:975" ph="..." />
-            <marker date="1520429489098" expanded="true" signature="1486:1769" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="1816:2145" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="2221:2421" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="2536:2832" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="2885:3149" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="3205:3477" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="3545:3996" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="4081:4444" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="4509:5084" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="5181:6314" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="6405:7844" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="7925:8940" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="9007:10078" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="10140:10476" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="10535:10796" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="10853:11259" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="11339:11350" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="11366:11372" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="11438:11449" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="11467:11473" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="11514:11630" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="11636:11654" ph="/**...*/" />
-            <marker date="1520429489098" expanded="false" signature="11724:11735" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="11769:11775" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="11831:12024" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="12030:12048" ph="/**...*/" />
-            <marker date="1520429489098" expanded="false" signature="12115:12126" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="12160:12166" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="12219:12430" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="12481:12585" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="12645:12782" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="12823:12972" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="13027:13107" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="13447:15007" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="15077:17293" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="17358:17905" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="17970:18447" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="18531:19013" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="19099:19613" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="19680:20615" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="20718:21599" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="21695:21772" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="21874:23288" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="23412:24176" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="24256:25936" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="26037:27758" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="27865:29627" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="29712:29794" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="29895:31334" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="31432:31518" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="31632:32879" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="32998:34517" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="34556:34567" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="34599:34605" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="34930:34999" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="35056:35067" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="35108:35114" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="35280:35298" ph="/**...*/" />
-            <marker date="1520429489098" expanded="false" signature="35354:35365" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="35424:35430" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="35436:35454" ph="/**...*/" />
-            <marker date="1520429489098" expanded="true" signature="35519:35611" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="35682:36022" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="36069:36343" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="36391:36512" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="36564:36652" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="36685:36876" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="36906:37093" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="37125:37315" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="37364:37949" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="38014:38527" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="38602:38965" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="39036:39385" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="39458:39709" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="39756:40004" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="40075:40326" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="40371:40493" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="40540:40662" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="40700:40820" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="40857:40868" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="40902:40908" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="41105:41116" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="41152:41158" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="41296:41307" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="41355:41361" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="41395:41492" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="41567:41993" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="42105:42116" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="42157:42163" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="42217:42228" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="42269:42275" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="42303:42314" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="42354:42360" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="42388:42399" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="42439:42445" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="42487:42498" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="42540:42546" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="42575:42586" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="42643:42649" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="42716:43069" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="43136:43489" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="43556:43909" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="43975:44290" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="44356:44671" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="44737:45052" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="45155:46877" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="46923:47135" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="47182:48118" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="48171:48297" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="48344:48521" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="48554:48565" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="48606:48612" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="48694:48754" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="48856:49296" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="49507:50308" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="50333:50447" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="50484:50632" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="50678:51005" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="51040:51277" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="51303:51637" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="51703:52001" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="52058:52177" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="52202:52281" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="52366:52542" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="52614:53142" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="53196:53207" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="53262:53268" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="53338:53836" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="53934:55285" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="55356:55777" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="55832:55951" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="56251:56262" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="56304:56310" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="56368:56379" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="56420:56426" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="57057:57849" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="57907:58105" ph="{...}" />
-            <marker date="1520429489098" expanded="false" signature="58536:58547" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="58588:58594" ph=" }" />
-            <marker date="1520429489098" expanded="false" signature="58669:58680" ph=" { " />
-            <marker date="1520429489098" expanded="false" signature="58708:58714" ph=" }" />
-            <marker date="1520429489098" expanded="true" signature="58774:59000" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="59006:59024" ph="/**...*/" />
-            <marker date="1520429489098" expanded="true" signature="59098:59550" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="59608:60060" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="60292:60368" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="60401:60603" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="60635:60836" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="60878:61381" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="61422:61880" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="61929:62182" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="62231:62479" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="62570:62646" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="62750:64531" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="64606:64691" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="64733:64905" ph="{...}" />
-            <marker date="1520429489098" expanded="true" signature="64966:65461" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMediansSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/filters/DifferenceOfMeansOrMediansSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
@@ -1328,36 +1273,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/filters/DifferenceOfMeansOrMedians.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="947">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/Segment3DSpots.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="e#1965#1966#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/NucleusSegmenterSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/NucleusSegmenterSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="45" />
@@ -1365,61 +1289,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterOutput.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/output.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenterSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imagereader/LeicaLifReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/CellSegmenter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenterOutput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="150">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenterSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/filters/DifferenceOfMeansOrMedians.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="194" column="29" lean-forward="false" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/segmentation/SpotSegmenter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/imagereader/LeicaLifReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/table/Tables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1431,28 +1358,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/output.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RunColocalisationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/output/OutputImageCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/SpotSegmenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="146">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/ImageShort.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="355" column="5" lean-forward="true" selection-start-line="355" selection-start-column="5" selection-end-line="355" selection-end-column="5" />
+          <folding>
+            <element signature="e#11239#11240#0" expanded="true" />
+            <element signature="e#11316#11317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/regionGrowing/Watershed3D.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+          <folding>
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/segmentation/CellSegmenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentNucleiCellsSpots.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="124" column="41" lean-forward="false" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+        <state relative-caret-position="364">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/output/OutputImageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/mcib3d/mcib3d-core/3.9/mcib3d-core-3.9.jar!/mcib3d/image3d/ImageHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="1760" column="33" lean-forward="false" selection-start-line="1760" selection-start-column="33" selection-end-line="1760" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/embl/cba/coloc3d/commands/RunColocalisationAnalysisCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="270" column="42" lean-forward="true" selection-start-line="270" selection-start-column="42" selection-end-line="270" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

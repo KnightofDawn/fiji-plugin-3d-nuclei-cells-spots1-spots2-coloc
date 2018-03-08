@@ -1,5 +1,5 @@
 import ij.ImagePlus;
-import imagereader.LeicaLifReader;
+import de.embl.cba.coloc3d.imagereader.LeicaLifReader;
 import net.imagej.ImageJ;
 
 public class OpenImageFromLif
