@@ -3,15 +3,12 @@ package de.embl.cba.coloc3d.commands;
 import automic.table.TableModel;
 import ij.IJ;
 import ij.ImagePlus;
-import ij.io.FileSaver;
 import ij.process.ImageProcessor;
 import mcib3d.geom.Object3D;
 import mcib3d.geom.Objects3DPopulation;
 import mcib3d.image3d.ImageHandler;
 import mcib3d.image3d.ImageInt;
-import mcib3d.image3d.ImageShort;
 import net.imagej.DatasetService;
-import net.imagej.ImageJ;
 import net.imagej.ops.OpService;
 import org.scijava.app.StatusService;
 import org.scijava.command.Command;
@@ -28,7 +25,6 @@ import de.embl.cba.coloc3d.filters.*;
 import de.embl.cba.coloc3d.imagereader.*;
 import de.embl.cba.coloc3d.output.*;
 import de.embl.cba.coloc3d.segmentation.*;
-import de.embl.cba.coloc3d.*;
 
 import static de.embl.cba.coloc3d.Utils.getBinnedByteImageHandler;
 import static de.embl.cba.coloc3d.Utils.getByteImageHandler;
@@ -106,37 +102,106 @@ public class RunColocalisationAnalysisCommand implements Command
 
     }
 
+    private static String COUNT_NUCLEI = "Count.Nuclei";
+    private static String COUNT_CELLS = "Count.Cells";
+    private static String COUNT_SPOTS_1 = "Count.Spots1";
+    private static String COUNT_SPOTS_2 = "Count.Spots2";
+    private static String DATA_SET_NAME = "DataSet.Name";
+
 
     private void runAlgorithm() throws Exception
     {
 
         TableModel table = new TableModel( outputImageDirectoryFile.toString() );
-        table.addColumn( "DataSet.Name" );
-        table.addValueColumn( "Nuclei.Count", "NUM"  );
-        table.addValueColumn( "Spots1.Count", "NUM"  );
-        table.addValueColumn( "Spots2.Count", "NUM"  );
-
+        table.addValueColumn( DATA_SET_NAME, "FACT" );
+        table.addValueColumn( COUNT_NUCLEI, "NUM"  );
+        table.addValueColumn( COUNT_CELLS, "NUM"  );
+        table.addValueColumn( COUNT_SPOTS_1, "NUM"  );
+        table.addValueColumn( COUNT_SPOTS_2, "NUM"  );
+        String tableFileName = "results.txt";
 
         // Input parameters
         //
-
         String inputDirectory = inputImageFile.getParent();
         String inputFile = inputImageFile.getName();
         String outputDirectory = outputImageDirectoryFile.toString();
 
+
         // Workflow
         //
+        int iDataSet = addNewDataSetToTable( table, inputFile );
 
-        table.addRow();
-        int iDataSet = table.getRowCount() - 1;
+        // Open Image
+        //
+        ImagePlus inputImp = getInputImage( inputDirectory, inputFile );
+        int frame = 1;
+
+        // Segment nuclei
+        //
+        ImageInt binnedNucleusLabelMask = getBinnedNucleusLabelMask( inputFile, outputDirectory, inputImp, frame );
+        putSegmentationResultsToTable( table, iDataSet, binnedNucleusLabelMask, 1, "Number of nuclei: ", COUNT_NUCLEI );
+
+        // Segment cells
+        //
+        ImageInt cellLabelMask = getCellLabelMask( inputFile, outputDirectory, inputImp, frame, binnedNucleusLabelMask );
+        putSegmentationResultsToTable( table, iDataSet, cellLabelMask, 2, "Number of cells: ", COUNT_CELLS );
 
 
+        // Segment spots
+        //
+        SpotSegmenterSettings spotSegmenterSettings = getSpotSegmenterSettings();
+        SpotSegmenter spotSegmenter = new SpotSegmenter( spotSegmenterSettings );
+        ArrayList< ImageInt > spotsLabelMasks = new ArrayList<>(  );
+
+        // Spots 1
+        //
+        spotsLabelMasks.add(
+                getSpotsLabelMask(
+                    table, inputFile, outputDirectory, iDataSet, inputImp, frame, spotSegmenter, spots1Channel, COUNT_SPOTS_1 )
+        );
+
+        // Spots 2
+        //
+        spotsLabelMasks.add(
+                getSpotsLabelMask(
+                    table, inputFile, outputDirectory, iDataSet, inputImp, frame, spotSegmenter, spots2Channel, COUNT_SPOTS_2 )
+        );
+
+        // Save table
+        //
+        table.writeNewFile(  tableFileName, true );
+        logService.info( "Saved table file: " + table.getRootPath() + File.separator + tableFileName);
+
+        // Count spots per cell
+        //
+        spotsLabelMasks.get( 0 ).getImagePlus().show();
+        cellLabelMask.getImagePlus().show();
+
+        Objects3DPopulation cellObjectsPopulation = new Objects3DPopulation( cellLabelMask, 1 ); // 1: exclude boundary pixels in watershed cell image
+
+        for ( ImageInt spotsLabelMask : spotsLabelMasks )
+        {
+            Objects3DPopulation spotObjectsPopulation = new Objects3DPopulation( spotsLabelMask, 0 );
+            logService.info( "Analysing " + spotObjectsPopulation.getNbObjects() + " spots..." );
+
+            for ( int iCell = 0; iCell < cellObjectsPopulation.getNbObjects(); ++iCell )
+            {
+                Object3D cell = cellObjectsPopulation.getObject( iCell );
+                ArrayList< Object3D > spotsInsideCell = spotObjectsPopulation.getObjectsWithinDistanceBorder( cell, 0.0 );
+                logService.info( "Cell " + iCell + " has " + spotsInsideCell.size() + " spots" );
+            }
+        }
+
+
+    }
+
+    private ImagePlus getInputImage( String inputDirectory, String inputFile )
+    {
         String inputPath = inputDirectory + File.separator + inputFile;
-        String outputFile;
 
         logService.info("Opening: " + inputPath );
 
-        ImagePlus inputImp;
+        ImagePlus inputImp = null;
 
         if ( inputPath.endsWith( ".tif" ) )
         {
@@ -149,80 +214,59 @@ public class RunColocalisationAnalysisCommand implements Command
         else
         {
             logService.error( "Unsupported image file type." );
-            return;
         }
-
-        //ImagePlus imp = LeicaLifReader.open( imagePath, 1  );
-
-        inputImp.show();
 
         nx = inputImp.getWidth();
         ny = inputImp.getHeight();
         nz = inputImp.getNSlices();
 
-        int frame = 1;
-
-        // Segment nuclei
-        //
-        ImageHandler binnedNucleusLabelMask = getBinnedNucleusLabelMask( inputFile, outputDirectory, inputImp, frame );
-
-
-        // Segment cells
-        //
-        ImageInt cellLabelMask = getCellLabelMask( inputFile, outputDirectory, inputImp, frame, binnedNucleusLabelMask );
-
-
-        // Segment spots
-        //
-        SpotSegmenterSettings spotSegmenterSettings = getSpotSegmenterSettings();
-        SpotSegmenter spotSegmenter = new SpotSegmenter( spotSegmenterSettings );
-
-        // spots 1
-        //
-        logService.info("Segmenting spots 1..." );
-
-        ImageHandler spots1 = getByteImageHandler( inputImp, spots1Channel, frame );
-        SpotSegmenterOutput spotSegmenterOutput1 = spotSegmenter.segment( spots1 );
-
-        outputFile = inputFile + "--spots1LabelMask.jpg";
-        OutputImageCreator.saveLabelMaskAsMaximumProjection( spotSegmenterOutput1.labelMask, outputDirectory + File.separator + outputFile );
-
-        /*
-        // spots 2
-        //
-        logService.info("Segmenting spots 2..." );
-
-        // TODO: - remove binning in final version
-        ImageHandler spots2 = getBinnedByteImageHandler( inputImp, spots2Channel, 2, 2, 1, frame );
-        SpotSegmenterOutput spotSegmenterOutput2 = spotSegmenter.segment( spots1 );
-
-        table.setNumericValue( spotSegmenterOutput2.objects.size(), iDataSet, "Spots2.Count" );
-
-        outputFile = inputFile + "--spots2LabelMask.jpg";
-        OutputImageCreator.saveLabelMaskAsMaximumProjection( spotSegmenterOutput2.labelMask, outputDirectory + File.separator + outputFile );
-        */
-
-        table.writeNewFile( "results.txt", true );
-
-        // count spots per cell
-        //
-        Objects3DPopulation cellObjectsPopulation = new Objects3DPopulation( cellLabelMask );
-        Objects3DPopulation spotObjectsPopulation = new Objects3DPopulation( spotSegmenterOutput1.objects );
-
-
-        for ( int iCell = 0; iCell < cellObjectsPopulation.getNbObjects(); ++iCell )
-        {
-            Object3D cell = cellObjectsPopulation.getObject( iCell );
-            ArrayList< Object3D > spotsInsideCell = spotObjectsPopulation.getObjectsWithinDistanceBorder( cell, 0.0 );
-            spotsInsideCell.size();
-        }
-
-        logService.info( "Done!" );
+        return inputImp;
     }
 
-    private ImageHandler getBinnedNucleusLabelMask( String inputFile, String outputDirectory, ImagePlus inputImp, int frame )
+    private int addNewDataSetToTable( TableModel table, String inputFile ) throws Exception
     {
-        String outputFile;
+        table.addRow();
+        int iDataSet = table.getRowCount() - 1;
+        table.setFactorValue( inputFile, iDataSet, DATA_SET_NAME );
+        return iDataSet;
+    }
+
+    private ImageInt getSpotsLabelMask( TableModel table,
+                                                   String inputFile,
+                                                   String outputDirectory,
+                                                   int iDataSet,
+                                                   ImagePlus inputImp,
+                                                   int frame,
+                                                   SpotSegmenter spotSegmenter,
+                                                   int spotsChannel,
+                                                   String spotsColumnName
+                                                           ) throws Exception
+    {
+        logService.info( "Segmenting spots in channel " + spotsChannel + "..." );
+
+        ImageHandler spotsImage = getByteImageHandler( inputImp, spotsChannel, frame );
+        ImageInt spotsLabelMask = spotSegmenter.segment( spotsImage );
+
+        String outputFile = inputFile + "--spotsChannel" + spotsChannel + "-LabelMask.jpg";
+        OutputImageCreator.saveLabelMaskAsMaximumProjection( spotsLabelMask, outputDirectory, outputFile );
+        logService.info( "Saved image file: " + outputDirectory + File.separator + outputFile );
+
+        int numSpots = new Objects3DPopulation( spotsLabelMask, 0 ).getNbObjects();
+        table.setNumericValue( numSpots, iDataSet, spotsColumnName );
+        logService.info( "Number of spots in channel " + spotsChannel + " is " + numSpots );
+
+        return spotsLabelMask;
+    }
+
+    private void putSegmentationResultsToTable( TableModel table, int iDataSet, ImageInt cellLabelMask, int i, String s, String countCells ) throws Exception
+    {
+        int numCells = cellLabelMask.getUniqueValues().size() - i; // minus 0 and boundaries in watershed image have value 1
+        logService.info( s + numCells );
+        table.setNumericValue( numCells, iDataSet, countCells );
+    }
+
+    private ImageInt getBinnedNucleusLabelMask( String inputFile, String outputDirectory, ImagePlus inputImp, int frame )
+    {
         logService.info("Segmenting nuclei..." );
 
         ImageHandler binnedNucleusImage = getBinnedByteImageHandler( inputImp, nucleusChannel, binX, binY, binZ, frame );
@@ -233,12 +277,12 @@ public class RunColocalisationAnalysisCommand implements Command
         nucleusSegmenterSettings.threshold = 20;
         NucleusSegmenter nucleusSegmenter = new NucleusSegmenter( nucleusSegmenterSettings );
 
-        ImageHandler binnedNucleusLabelMask = nucleusSegmenter.segment( binnedNucleusImage );
+        ImageInt binnedNucleusLabelMask = (ImageInt) nucleusSegmenter.segment( binnedNucleusImage );
 
+        // TODO: bug in resample! it also resamples the original => update maven!!
         //ImageHandler nucleusLabelMask = binnedNucleusLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
-
-        //outputFile = inputFile + "--nucleusLabelMask.jpg";
-        //OutputImageCreator.saveLabelMaskAsMaximumProjection( nucleusLabelMask, outputDirectory + File.separator + outputFile );
+        //String outputFile = inputFile + "--nuclei-LabelMask.jpg";
+        //OutputImageCreator.saveLabelMaskAsMaximumProjection( nucleusLabelMask, outputDirectory, outputFile );
 
         return binnedNucleusLabelMask;
     }
@@ -257,11 +301,11 @@ public class RunColocalisationAnalysisCommand implements Command
         cellSegmenterSettings.threshold = 5;
         CellSegmenter cellSegmenter = new CellSegmenter( cellSegmenterSettings );
 
-        ImageHandler binnedCellLabelMask = cellSegmenter.segment( binnedCellImage, binnedNucleusLabelMask );
-        ImageInt cellLabelMask = ( ImageInt ) binnedCellLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
+        ImageInt binnedCellLabelMask = (ImageInt) cellSegmenter.segment( binnedCellImage, binnedNucleusLabelMask );
+        ImageInt cellLabelMask = binnedCellLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
 
-        String outputFile = inputFile + "--cellLabelMask.jpg";
-        OutputImageCreator.saveLabelMaskAsMaximumProjection( cellLabelMask, outputDirectory + File.separator + outputFile );
+        String outputFile = inputFile + "--cells-LabelMask.jpg";
+        OutputImageCreator.saveLabelMaskAsMaximumProjection( cellLabelMask, outputDirectory, outputFile );
 
         return cellLabelMask;
     }

@@ -28,12 +28,7 @@ public class CellSegmenter
 
     private ImageHandler seededWatershed( ImageHandler nucleusLabelMask, ImageHandler smoothed )
     {
-        int seedsThreshold = 1;
-
-        smoothed.getImagePlus().show();
-        nucleusLabelMask.getImagePlus().show();
-
-        Watershed3D watershed3D = new Watershed3D( smoothed, nucleusLabelMask, settings.threshold, seedsThreshold );
+        Watershed3D watershed3D = new Watershed3D( smoothed, nucleusLabelMask, settings.threshold, 0 );
 
         return watershed3D.getWatershedImage3D();
     }

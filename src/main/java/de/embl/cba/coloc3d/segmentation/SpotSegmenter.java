@@ -1,11 +1,9 @@
 package de.embl.cba.coloc3d.segmentation;
 
 import de.embl.cba.coloc3d.filters.DifferenceOfMeansOrMedians;
+import de.embl.cba.coloc3d.output.OutputImageCreator;
 import ij.util.ThreadUtil;
-import mcib3d.image3d.ImageFloat;
-import mcib3d.image3d.ImageHandler;
-import mcib3d.image3d.ImageShort;
-import mcib3d.image3d.Segment3DSpots;
+import mcib3d.image3d.*;
 import mcib3d.image3d.processing.FastFilters3D;
 
 public class SpotSegmenter
@@ -20,7 +18,7 @@ public class SpotSegmenter
         this.numThreads = ThreadUtil.getNbCpus();
     }
 
-    public SpotSegmenterOutput segment( ImageHandler input )
+    public ImageInt segment( ImageHandler input )
     {
 
         ImageHandler filtered = filter( new ImageFloat( input ) );
@@ -44,11 +42,7 @@ public class SpotSegmenter
 
         segment3DSpots.segmentAll();
 
-        SpotSegmenterOutput spotSegmenterOutput = new SpotSegmenterOutput();
-        spotSegmenterOutput.objects = segment3DSpots.getObjects();
-        spotSegmenterOutput.labelMask = segment3DSpots.getLabelImage();
-
-        return spotSegmenterOutput;
+        return (ImageInt) segment3DSpots.getLabelImage();
     }
 
 
