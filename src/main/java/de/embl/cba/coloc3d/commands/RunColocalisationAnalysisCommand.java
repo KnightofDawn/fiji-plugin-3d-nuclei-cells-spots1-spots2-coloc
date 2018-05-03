@@ -102,11 +102,11 @@ public class RunColocalisationAnalysisCommand implements Command
 
     }
 
-    private static String COUNT_NUCLEI = "Count.Nuclei";
-    private static String COUNT_CELLS = "Count.Cells";
+
+    private static String DATA_SET_NAME = "DataSet.Name";
     private static String COUNT_SPOTS_1 = "Count.Spots1";
     private static String COUNT_SPOTS_2 = "Count.Spots2";
-    private static String DATA_SET_NAME = "DataSet.Name";
+    private static String CELL_ID = "Cell.ID";
 
 
     private void runAlgorithm() throws Exception
@@ -114,8 +114,6 @@ public class RunColocalisationAnalysisCommand implements Command
 
         TableModel table = new TableModel( outputImageDirectoryFile.toString() );
         table.addValueColumn( DATA_SET_NAME, "FACT" );
-        table.addValueColumn( COUNT_NUCLEI, "NUM"  );
-        table.addValueColumn( COUNT_CELLS, "NUM"  );
         table.addValueColumn( COUNT_SPOTS_1, "NUM"  );
         table.addValueColumn( COUNT_SPOTS_2, "NUM"  );
         String tableFileName = "results.txt";
@@ -139,18 +137,16 @@ public class RunColocalisationAnalysisCommand implements Command
         // Segment nuclei
         //
         ImageInt binnedNucleusLabelMask = getBinnedNucleusLabelMask( inputFile, outputDirectory, inputImp, frame );
-        putSegmentationResultsToTable( table, iDataSet, binnedNucleusLabelMask, 1, "Number of nuclei: ", COUNT_NUCLEI );
 
         // Segment cells
         //
         ImageInt cellLabelMask = getCellLabelMask( inputFile, outputDirectory, inputImp, frame, binnedNucleusLabelMask );
-        putSegmentationResultsToTable( table, iDataSet, cellLabelMask, 2, "Number of cells: ", COUNT_CELLS );
-
 
         // Segment spots
         //
         SpotSegmenterSettings spotSegmenterSettings = getSpotSegmenterSettings();
         SpotSegmenter spotSegmenter = new SpotSegmenter( spotSegmenterSettings );
+
         ArrayList< ImageInt > spotsLabelMasks = new ArrayList<>(  );
 
         // Spots 1
@@ -166,11 +162,6 @@ public class RunColocalisationAnalysisCommand implements Command
                 getSpotsLabelMask(
                     table, inputFile, outputDirectory, iDataSet, inputImp, frame, spotSegmenter, spots2Channel, COUNT_SPOTS_2 )
         );
-
-        // Save table
-        //
-        table.writeNewFile(  tableFileName, true );
-        logService.info( "Saved table file: " + table.getRootPath() + File.separator + tableFileName);
 
         // Count spots per cell
         //
@@ -189,8 +180,22 @@ public class RunColocalisationAnalysisCommand implements Command
                 Object3D cell = cellObjectsPopulation.getObject( iCell );
                 ArrayList< Object3D > spotsInsideCell = spotObjectsPopulation.getObjectsWithinDistanceBorder( cell, 0.0 );
                 logService.info( "Cell " + iCell + " has " + spotsInsideCell.size() + " spots" );
+
+                // TODO: store values in a cell-based table
             }
         }
+
+        // Count colocalising spots per cell
+        //
+
+        // TODO
+
+
+
+        // Save table
+        //
+        table.writeNewFile(  tableFileName, true );
+        logService.info( "Saved table file: " + table.getRootPath() + File.separator + tableFileName);
 
 
     }
@@ -258,11 +263,11 @@ public class RunColocalisationAnalysisCommand implements Command
         return spotsLabelMask;
     }
 
-    private void putSegmentationResultsToTable( TableModel table, int iDataSet, ImageInt cellLabelMask, int i, String s, String countCells ) throws Exception
+    private void logCount( ImageInt labelMask, int i, String s )
     {
-        int numCells = cellLabelMask.getUniqueValues().size() - i; // minus 0 and boundaries in watershed image have value 1
+        //boundaries in watershed image have value 1 and must be ignored as well
+        int numCells = labelMask.getUniqueValues().size() - i;
         logService.info( s + numCells );
-        table.setNumericValue( numCells, iDataSet, countCells );
     }
 
     private ImageInt getBinnedNucleusLabelMask( String inputFile, String outputDirectory, ImagePlus inputImp, int frame )
@@ -278,6 +283,8 @@ public class RunColocalisationAnalysisCommand implements Command
         NucleusSegmenter nucleusSegmenter = new NucleusSegmenter( nucleusSegmenterSettings );
 
         ImageInt binnedNucleusLabelMask = (ImageInt) nucleusSegmenter.segment( binnedNucleusImage );
+
+        logCount( binnedNucleusLabelMask, 1, "Number of nuclei: " )
 
         // TODO: bug in resample! it also resamples the original => update maven!!
         //ImageHandler nucleusLabelMask = binnedNucleusLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
@@ -303,6 +310,8 @@ public class RunColocalisationAnalysisCommand implements Command
 
         ImageInt binnedCellLabelMask = (ImageInt) cellSegmenter.segment( binnedCellImage, binnedNucleusLabelMask );
         ImageInt cellLabelMask = binnedCellLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
+
+        logCount( cellLabelMask, 2, "Number of cells: " );
 
         String outputFile = inputFile + "--cells-LabelMask.jpg";
         OutputImageCreator.saveLabelMaskAsMaximumProjection( cellLabelMask, outputDirectory, outputFile );
