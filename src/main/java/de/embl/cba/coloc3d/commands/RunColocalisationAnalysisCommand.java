@@ -6,6 +6,8 @@ import ij.ImagePlus;
 import ij.process.ImageProcessor;
 import mcib3d.geom.Object3D;
 import mcib3d.geom.Objects3DPopulation;
+import mcib3d.geom.Objects3DPopulationColocalisation;
+import mcib3d.geom.PairColocalisation;
 import mcib3d.image3d.ImageHandler;
 import mcib3d.image3d.ImageInt;
 import net.imagej.DatasetService;
@@ -168,21 +170,26 @@ public class RunColocalisationAnalysisCommand implements Command
         spotsLabelMasks.get( 0 ).getImagePlus().show();
         cellLabelMask.getImagePlus().show();
 
-        Objects3DPopulation cellObjectsPopulation = new Objects3DPopulation( cellLabelMask, 1 ); // 1: exclude boundary pixels in watershed cell image
+        Objects3DPopulation cellObjectsPopulation = new Objects3DPopulation( cellLabelMask, 0 );
 
         for ( ImageInt spotsLabelMask : spotsLabelMasks )
         {
             Objects3DPopulation spotObjectsPopulation = new Objects3DPopulation( spotsLabelMask, 0 );
             logService.info( "Analysing " + spotObjectsPopulation.getNbObjects() + " spots..." );
 
+            Objects3DPopulationColocalisation colocalisation = new Objects3DPopulationColocalisation( cellObjectsPopulation, spotObjectsPopulation );
+
+            int numSpotsColocalisingTotal  = 0;
             for ( int iCell = 0; iCell < cellObjectsPopulation.getNbObjects(); ++iCell )
             {
                 Object3D cell = cellObjectsPopulation.getObject( iCell );
-                ArrayList< Object3D > spotsInsideCell = spotObjectsPopulation.getObjectsWithinDistanceBorder( cell, 0.0 );
-                logService.info( "Cell " + iCell + " has " + spotsInsideCell.size() + " spots" );
-
+                int dummy = colocalisation.getColocRaw(0, 0 ); // just for initialisation (due to bug)
+                ArrayList< PairColocalisation> pairColocalisations = colocalisation.getObject1ColocalisationPairs( cell );
+                numSpotsColocalisingTotal  += pairColocalisations.size();
+                logService.info( "Cell " + iCell + " has " + pairColocalisations.size() + " spots" );
                 // TODO: store values in a cell-based table
             }
+            logService.info( "Total number of colocalising spots: " +  numSpotsColocalisingTotal );
         }
 
         // Count colocalising spots per cell
@@ -237,15 +244,14 @@ public class RunColocalisationAnalysisCommand implements Command
     }
 
     private ImageInt getSpotsLabelMask( TableModel table,
-                                                   String inputFile,
-                                                   String outputDirectory,
-                                                   int iDataSet,
-                                                   ImagePlus inputImp,
-                                                   int frame,
-                                                   SpotSegmenter spotSegmenter,
-                                                   int spotsChannel,
-                                                   String spotsColumnName
-                                                           ) throws Exception
+                                       String inputFile,
+                                       String outputDirectory,
+                                       int iDataSet,
+                                       ImagePlus inputImp,
+                                       int frame,
+                                       SpotSegmenter spotSegmenter,
+                                       int spotsChannel,
+                                       String spotsColumnName ) throws Exception
     {
         logService.info( "Segmenting spots in channel " + spotsChannel + "..." );
 
@@ -263,10 +269,10 @@ public class RunColocalisationAnalysisCommand implements Command
         return spotsLabelMask;
     }
 
-    private void logCount( ImageInt labelMask, int i, String s )
+    private void logCount( ImageInt labelMask, String s )
     {
         //boundaries in watershed image have value 1 and must be ignored as well
-        int numCells = labelMask.getUniqueValues().size() - i;
+        int numCells = labelMask.getUniqueValues().size() - 1;
         logService.info( s + numCells );
     }
 
@@ -284,7 +290,7 @@ public class RunColocalisationAnalysisCommand implements Command
 
         ImageInt binnedNucleusLabelMask = (ImageInt) nucleusSegmenter.segment( binnedNucleusImage );
 
-        logCount( binnedNucleusLabelMask, 1, "Number of nuclei: " )
+        logCount( binnedNucleusLabelMask, "Number of nuclei: " );
 
         // TODO: bug in resample! it also resamples the original => update maven!!
         //ImageHandler nucleusLabelMask = binnedNucleusLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
@@ -311,7 +317,7 @@ public class RunColocalisationAnalysisCommand implements Command
         ImageInt binnedCellLabelMask = (ImageInt) cellSegmenter.segment( binnedCellImage, binnedNucleusLabelMask );
         ImageInt cellLabelMask = binnedCellLabelMask.resample( nx, ny, nz, ImageProcessor.NEAREST_NEIGHBOR );
 
-        logCount( cellLabelMask, 2, "Number of cells: " );
+        logCount( cellLabelMask, "Number of cells: " );
 
         String outputFile = inputFile + "--cells-LabelMask.jpg";
         OutputImageCreator.saveLabelMaskAsMaximumProjection( cellLabelMask, outputDirectory, outputFile );

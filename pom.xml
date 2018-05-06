@@ -131,13 +131,13 @@
         <dependency>
             <groupId>com.github.ssgpers</groupId>
             <artifactId>java-utils-embl</artifactId>
-            <version>master-SNAPSHOT</version>
+            <version>572a856481d2d88cfed4405833f9861195a8392b</version>
         </dependency>
 
 		<dependency>
 			<groupId>com.github.mcib3d</groupId>
 			<artifactId>mcib3d-core</artifactId>
-			<version>3.9</version>  <!-- master-SNAPSHOT does not work.... -->
+			<version>master-SNAPSHOT</version>  <!-- master-SNAPSHOT does not work.... -->
 		</dependency>
 
 
